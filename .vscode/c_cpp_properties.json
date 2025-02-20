@@ -9,13 +9,14 @@
               //  "${env:RISCV_TOOLCHAIN_PATH}/RISC-V_Embedded_GCC/riscv-none-embed/include"
             ],
             "defines": [
+                "F_CPU 16000000UL",
                 "_DEBUG",
-                "PART_TM4C123GH6PM"
+                "__AVR_ATmega128__"
             ],
-            "compilerPath": "${env:RISCV_GCC_PATH}gcc",
+            "compilerPath": "${workspaceFolder}/avr8-gnu-toolchain-linux_x86_64/bin/avr-gcc",
             "cStandard": "c99",
             "cppStandard": "gnu++17",
-            "intelliSenseMode": "gcc-arm",
+            "intelliSenseMode": "${default}",
             "configurationProvider": "ms-vscode.cmake-tools"
         }
     ],
