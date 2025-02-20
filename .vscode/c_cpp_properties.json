@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "LINUX",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/local/bin"
+              //  "${env:RISCV_TOOLCHAIN_PATH}/RISC-V_Embedded_GCC/riscv-none-embed",
+              //  "${env:RISCV_TOOLCHAIN_PATH}/RISC-V_Embedded_GCC/riscv-none-embed/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "PART_TM4C123GH6PM"
+            ],
+            "compilerPath": "${env:RISCV_GCC_PATH}gcc",
+            "cStandard": "c99",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "gcc-arm",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}
